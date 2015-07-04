@@ -1,6 +1,6 @@
 .user-show-avatar {
-  height: 128px;
-  width: 128px;
+  height: 390px;
+  width: 260px;
 }
 
 .job-title-icon {
@@ -34,4 +34,21 @@
 
 .well.white-bg {
   background-color: white;
+}
+.layout_background{
+  opacity: 1;
+  //background-image: -webkit-linear-gradient(left, rgb(236, 233, 230), rgb(255, 255, 255));
+  background-image: -webkit-linear-gradient(left, rgb(185, 147, 214), rgb(140, 166, 219));
+  background-color: rgb(255, 255, 255);
+}
+.header_login{
+  height: 90px;
+  margin: 0 auto;
+  padding-top: 50px;
+ // width: 0px;
+}
+.avatar-Container{
+  border: 5px solid red;
+  border-size: 128px;
+  border-height: 128px;
 }
