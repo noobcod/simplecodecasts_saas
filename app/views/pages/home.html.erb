@@ -10,10 +10,10 @@
           <% if current_user.profile %>
           <%= link_to "Edit My Profile", edit_user_profile_path(current_user), class: 'btn btn-info btn-lg btn-block' %>
           <%= link_to "View My Profile", user_path(current_user), class: 'btn btn-info btn-lg btn-block' %>
-       <%else %>
+          <%else %>
           <p class="text-center"> Create your profile to share your information with the Community.</p>
           <%= link_to "Create your profile", new_user_profile_path(current_user), class: 'btn btn-info btn-lg btn-block' %>
-      <% end %>
+          <% end %>
         </div>
       </div>
       <div class="col-md-6">
@@ -24,23 +24,59 @@
         </div>
       </div>
   <% else %>
-      <div class="col-md-6">
-        <div class="well">
-          <h2 class="text-center">Basic Membership</h2>
-          <h4> Sign up for free and get basic access to the community.</h4>
-          <br/>
-          <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
-        </div>
+    <div class="col-md-6">
+      <div class="well">
+        <h2 class="text-center">Basic Membership</h2>
+        <h4> Sign up for free and get basic access to the community.</h4>
+        <br/>
+        <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
       </div>
-      <div class="col-md-6">
-        <div class="well">
-          <h2 class="text-center">Pro Membership</h2>
-          <h4>Sign up for the pro account for $10/month and get access to the community and contact information!</h4>
-          <%= link_to "Sign up Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
-        </div>
+    </div>
+    <div class="col-md-6">
+      <div class="well">
+        <h2 class="text-center">Pro Membership</h2>
+        <h4>Sign up for the pro account for $10/month and get access to the community and contact information!</h4>
+        <%= link_to "Sign up Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+  <% end %>     
       </div>
-  <% end %>
+    </div>
   </div>
-  
+</div>
+<!--Navigation bar -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <h6>Copyright &copy; 2015 DEV MATCH</h6>
+      </div>
+      <div class="col-sm-4">
+        <h6>Help and Support</h6>
+      <p class="text-justify">At Dev Match, you can meet devlopers and investors around the globe who can help or guide you throught your journey to sucess. So basically anyone who is looking for investment for the startup or looking for a co-founder for their startup can get in touch with like minded people here. Go join the community Now!
+      </p>
+      </div>
+      <div class="col-sm-2">
+        <h6>Navigation</h6>
+          <ul class="unstyled text-justify">
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>Services</li>
+            <li><a href="#"></a>Links</li>
+            <li><a href="#"></a>Contact Us</li>
+          </ul>
+      </div>
+      <div class="col-sm-2">
+        <h6>Follow Us</h6>
+          <ul class="unstyled text-left">
+            <li><a href="#"></a>Facebook</li>
+            <li><a href="#"></a>Twitter</li>
+            <li><a href="#"></a>Linkedin</li>
+            <li><a href="#"></a>Google Plus</li>
+          </ul>
+      </div>
+      <div class="col-sm-2">
+        <h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Ankit</h6>
+      </div>
+    </div>
+  </div>
+</footer>  
 
 
